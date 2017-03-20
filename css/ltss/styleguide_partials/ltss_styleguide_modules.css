@@ -1,0 +1,392 @@
+@import-once url("http://ltssmsdevweb02/MS-Dev3QC/Ltss.Web/Content/ltss_modules.less");
+/* 
+## Login Module
+  <div class="login-body">
+    <div class="login-panel">
+      <fieldset id="login-form">
+        <legend>Login</legend>
+        <div class="row">
+        <label for="IdentityName">Login Name</label><input class="readonly" id="IdentityName" name="IdentityName" type="text"></div>
+      </fieldset>
+    </div>
+  </div>
+
+## Workspace Header
+    <div id="workspace" tabindex="0">
+        <div role="presentation" class="">
+            <div class="selection-summaryinfo">
+                <div role="presentation">
+                    <button class="leftNav-dropDownButton hide-for-print"><span class="icon-reorder " id="menuIcon"></span></button><h3>Workspace Header Title</h3>
+                        <div class="workspace-header-bar">
+                            <div class="float-right">
+                                <button id="" class="">Button</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+## Generic Form Style 
+  <div class="genericform-style read-only">
+      <h4>Form Style Header</h4>
+      <div class="TaskDetailLink">
+        <a href="#">Edit</a>
+      </div>
+      <fieldset class="fieldset-container-one">
+          <legend class="legend-header-one">Legend</legend>
+          <div class="row">
+          </div>
+      </fieldset>
+  </div>
+
+## Legends
+Legends have different sizes, using the classes <code>legend-header-one</code> and <code>legend-header-two</code>
+    <div class="workspace-content-container">
+      <div class="genericform-style">
+        <h4>Legends</h4>
+        <fieldset class="fieldset-container-one">
+            <legend-header-one>legend header one</legend>
+            <div class="row">
+                text
+            </div>
+          <fieldset class="fieldset-container-two">
+              <legend-header-two>legend header two</legend>
+              <div class="row">
+                  text
+              </div>
+          </fieldset>
+        </fieldset>
+      </div>
+    </div>
+
+## Header info
+Inside fieldsets, you can add the class <code>header-info</code> to add an info box.
+<div class="workspace-content-container">
+      <div class="genericform-style">
+        <h4>Header Info</h4>
+        <fieldset class="fieldset-container-one">
+            <legend-header-one>legend header one</legend>
+            <div class="header-info">look at this important information</div>
+        </fieldset>
+      </div>
+    </div>
+
+## Accordions
+  <div id="ltssPanelBar">
+    <div class="panelbar-formheader-style genericform-style read-only">
+      <div class="panel">
+        <div class="header">
+          <div class="arrow"></div>
+          <h4>Panel 1</h4>
+        </div>
+        <div class="body">
+          <div class="form-panelbar-content">
+            <div class="fieldset-container-one">
+              some text
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="header">
+          <div class="arrow"></div>
+          <h4>Panel 2</h4>
+        </div>
+        <div class="body">
+          <div class="form-panelbar-content">
+            <div class="fieldset-container-one">
+              some text
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="header">
+          <div class="arrow"></div>
+          <h4>Panel 3</h4>
+        </div>
+        <div class="body">
+          <div class="form-panelbar-content">
+            <div class="fieldset-container-one">
+              some text
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="header">
+          <div class="arrow"></div>
+          <h4>Panel 4</h4>
+        </div>
+        <div class="body">
+          <div class="form-panelbar-content">
+            <div class="fieldset-container-one">
+              some text
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+## Rows
+The class "row" will put elements underneath each other.
+  <div class="row">Row 1</div>
+  <div class="row">Row 2</div>
+
+If rows require placement next to each other, a class "stacked" alongside "row" is required.
+  <div class="row stacked">Stacked Row</div>
+  <div class="row stacked">Stacked Row</div>
+
+## Columns
+Use the classes <code>column-left</code> and <code>column-right</code> to create columns. The class <code>summary</code> added to a <code>row</code> class
+will add a background color to the row.
+
+  <div class="workspace-content-container">
+    <div class="genericform-style read-only">
+      <h4>Columns</h4>
+      <fieldset class="fieldset-container-one">
+        <legend class="legend-header-one">Columns</legend>
+          <div class="column-left">
+            <p class="row summary">
+              left column
+            </p>
+          </div>
+          <div class="column-right">
+            <p class="row summary">
+              right column
+            </p>
+          </div>
+      </fieldset>
+    </div>
+  </div>
+
+## Fieldset Container Styles
+Fieldset container styles one, two, three, and four are to be nested inside each other.
+
+  <div class="genericform-style">
+    <h4>Fieldset Container One</h4>
+    <fieldset class="fieldset-container-one">
+      <legend class="legend-header-one">General Information</legend>
+      <div class="row">bloop</div>
+    </fieldset>
+  </div>
+
+  <div class="genericform-style">
+    <h4>Fieldset Container Two</h4>
+    <fieldset class="fieldset-container-one">
+      <legend class="legend-header-one">General Information</legend>
+      <fieldset class="fieldset-container-two">bloop</fieldset>
+    </fieldset>
+  </div>
+
+  <div class="genericform-style">
+    <h4>Fieldset Container Three</h4>
+    <fieldset class="fieldset-container-one">
+      <legend class="legend-header-one">General Information</legend>
+      <fieldset class="fieldset-container-two"> bloop two
+        <fieldset class="fieldset-container-three">bloop three</fieldset>
+      </fieldset>
+    </fieldset>
+  </div>
+
+  <div class="genericform-style">
+    <h4>Fieldset Container Four</h4>
+    <fieldset class="fieldset-container-one">
+      <legend class="legend-header-one">General Information</legend>
+      <fieldset class="fieldset-container-two"> bloop two
+        <fieldset class="fieldset-container-three">bloop three
+          <fieldset class="fieldset-container-four">bloop four
+          </fieldset>
+        </fieldset>
+      </fieldset>
+    </fieldset>
+  </div>
+
+## Fieldset Container Search Area
+  <div class="genericform-style read-only">
+    <fieldset class="fieldset-container-searcharea">
+          <legend>Search</legend>
+          <input id="SearchFor" name="SearchFor" type="hidden" value="Cases">
+          <div class="p-column-left">
+            <div class="row stacked">
+                  <label for="ClientSearchCriteria_ClientId">Label</label>
+                  <input class="text-box single-line" id="input" name="input" type="text" value="">
+              </div>
+          </div>
+      </fieldset>
+    </div>
+
+## Pop ups
+<h4>Fancy Box</h4><br><Br>
+
+  <div class="fancybox-wrap fancybox-desktop fancybox-type-inline fancybox-opened">
+    <div class="fancybox-outer">
+      <div class="fancybox-inner">
+          <div class="js-workarea-panel">
+                  <fieldset class="fieldset-container-one">
+                      <legend class="legend-header-one">Add Person to Waitlist</legend>
+                      <div class="row">
+                          <label class="filter-required" for="ProgramTypeId">Program Type:<span class="filter-required-indicator" title="Selection required to apply filter." aria-hidden="true" role="presentation">*</span><span class="ui-hide hide-for-print filter-required-title">Selection required to apply filter.</span></label>
+                          <select class="required" id="ProgramTypeId" name="ProgramTypeId" tabindex="0">
+                  <option>TBI/SCI</option>
+                  <option>IL</option>
+                </select>
+                          <span class="field-validation-valid" data-valmsg-for="ProgramTypeId" data-valmsg-replace="true"></span>
+                      </div>
+                <div class="row">
+                    <label for="Comments">Comments:</label>
+                    <textarea class="comments-textarea" cols="20" id="Comments" name="Comments" rows="2" tabindex="0"></textarea>
+                </div>
+                <div class="searchspace-footer-bar">
+                    <button type="button" class="float-right" id="btnOk" tabindex="0">Continue</button>
+                    <button type="button" class="float-right" id="btnCancel" tabindex="0">Cancel</button>
+                      </div>
+                  </fieldset>
+          </div>
+        </div>
+      </div>
+      <div title="Close" class="fancybox-item fancybox-close"></div>
+    </div>
+
+## Tables
+  <h4>General Table Style</h4>
+```
+  <table class="generalTable dataTable" summary="test" id="DataTables_Table_7">
+      <thead>
+        <tr role="row">
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 1">
+            <div class="DataTables_sort_wrapper">Column 1<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 2">
+            <div class="DataTables_sort_wrapper">Column 2<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 3">
+            <div class="DataTables_sort_wrapper">Column 3<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 4">
+            <div class="DataTables_sort_wrapper">Column 4<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 5">
+            <div class="DataTables_sort_wrapper">Column 5<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 6">
+            <div class="DataTables_sort_wrapper">Column 6<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr role="row" class="odd">
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell"><span class="display-date data-element">01/22/2015</span></td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+          </tr>
+          <tr role="row" class="even">
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell"><span class="display-date data-element">05/03/2015</span></td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+          </tr>
+        </tbody>
+    </table>
+```
+  <br><br>
+  <h4>Inline Table Style</h4>
+```
+  <table class="inline-dataTable dataTable" summary="test 2" id="DataTables_Table_7">
+      <thead>
+        <tr role="row">
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 1">
+            <div class="DataTables_sort_wrapper">Column 1<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 2">
+            <div class="DataTables_sort_wrapper">Column 2<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 3">
+            <div class="DataTables_sort_wrapper">Column 3<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 4">
+            <div class="DataTables_sort_wrapper">Column 4<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 5">
+            <div class="DataTables_sort_wrapper">Column 5<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 6">
+            <div class="DataTables_sort_wrapper">Column 6<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr role="row" class="odd">
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell"><span class="display-date data-element">01/22/2015</span></td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+          </tr>
+          <tr role="row" class="even">
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell"><span class="display-date data-element">05/03/2015</span></td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+          </tr>
+        </tbody>
+    </table>
+```
+    <br><br>
+    <h4>Table Highlights</h4>
+```
+    <p>Tables rows can be highlighted with the class <code>tableRowHighlightRed</code></p>
+    <table class="inline-dataTable dataTable" summary="test 2" id="DataTables_Table_7">
+      <thead>
+        <tr role="row">
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 1">
+            <div class="DataTables_sort_wrapper">Column 1<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 2">
+            <div class="DataTables_sort_wrapper">Column 2<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 3">
+            <div class="DataTables_sort_wrapper">Column 3<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 4">
+            <div class="DataTables_sort_wrapper">Column 4<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 5">
+            <div class="DataTables_sort_wrapper">Column 5<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+          <th role="columnheader" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" aria-label="Column 6">
+            <div class="DataTables_sort_wrapper">Column 6<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div>
+          </th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr role="row" class="tableRowHighlightRed odd">
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell"><span class="display-date data-element">01/22/2015</span></td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+          </tr>
+          <tr role="row" class="tableRowHighlightRed even">
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+            <td role="gridcell"><span class="display-date data-element">05/03/2015</span></td>
+            <td role="gridcell">data</td>
+            <td role="gridcell">data</td>
+          </tr>
+        </tbody>
+    </table>
+```
+*/

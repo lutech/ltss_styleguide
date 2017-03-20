@@ -1,0 +1,26 @@
+/* 
+# LTSS - Style guide
+
+## Introduction
+
+The <code>ltss_theme.css</code> file is compiled from it's respective <code>ltss_theme.less</code> file located in the project source code. It is a library of color swatches and brushes that are meant to be used as <code>mixins</code> for components & elements found in the following LESS files only:
+
++   <code>ltss_styles.less</code>
++   <code>ltss_base.less</code>
++   <code>ltss_layout.less</code>
++   <code>ltss_modules.less</code>
+     
+**WARNING: Do not attempt to use the following variables and classes directly in the HTML Markup!!!**
+*/
+
+/* ### Base ### */
+@import url("styleguide_partials/ltss_styleguide_base.css");
+
+/* ### Styles ### */
+@import url("styleguide_partials/ltss_styleguide_styles.css");
+
+/* ### Theme ### */
+@import url("styleguide_partials/ltss_styleguide_theme.css");
+
+/* ### Modules ### */
+@import url("styleguide_partials/ltss_styleguide_modules.css");

@@ -1,0 +1,108 @@
+@import-once url("http://ltssmsdevweb02/MS-Dev3QC/Ltss.Web/Content/ltss_theme.less");
+/* 
+## Color Palette
+The LTSS color palette consists of the following types of color fills:
+    
++   Grayscale tones
++   Primary theme colors
++   Accent colors
++   Informational & feedback colors
++   Gradient fills
+
+## Grayscale Tones
+The *grayscale tones* are intended for UI elements that will likely never change from grayscale. Examples are drop-shadows, box-shadows, text-shadows, borders, etc.
+
+<div style="background-color: #333; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-one: #333;
+</div>
+<div style="background-color: #666; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-two: #666;
+</div>
+<div style="background-color: #999; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @gray-tone-three: #999;
+</div>
+<div style="background-color: #ccc; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-four: #ccc;
+</div>
+<div style="background-color: #ddd; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-five: #ddd;
+</div>
+<div style="background-color: #eee; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @gray-tone-six: #eee;
+</div>
+
+**Note:** Since *Black* and *White* are definitive, there is no need for them to be a variable. Thus, they have been intentionally excluded from the mixins. For implementation, simply use the Black <code>#000</code> and White <code>#fff</code> hex codes.
+## Dominant Colors
+The *dominant colors* are intended for layouts, containers, wrappers, etc. They are primarily used as the background and border colors of the application layout.
+
+<div style="background-color: #333; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-one: #333;
+</div>
+<div style="background-color: #666; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-two: #666;
+</div>
+<div style="background-color: #999; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @primary-color-three: #999;
+</div>
+<div style="background-color: #ccc; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-four: #ccc;
+</div>
+<div style="background-color: #ddd; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-five: #ddd;
+</div>
+<div style="background-color: #eee; margin: 5px;  padding: 5px; display: inline-block; color: #000">
+    @primary-color-six: #eee;
+</div>
+
+## Complementary Colors
+The *complimentary colors* are intended for UI elements that require visual emphasis. Or in other words, to stand out from the supporting *dominant colors* of the application. Some examples are text, headers, footers, borders, icons, etc.
+
+
+<div style="background-color: #044272; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-one: #044272;
+</div>
+<div style="background-color: #0063a7; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-two: #0063a7;
+</div>
+<div style="background-color: #2B7BB4; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-three: #2B7BB4;
+</div>
+<div style="background-color: #249dcc; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-four: #249dcc;
+</div>
+<div style="background-color: #1683E0; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @accent-color-five: #1683E0;
+</div>
+
+## Informational and Feedback Colors
+<div style="background-color: #FF9900; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @warning-color: #FF9900;
+</div>
+<div style="background-color: #3CB95A; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @success-color: #3CB95A;
+</div>
+<div style="background-color: #ff0000; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @danger-color: #ff0000;
+</div>
+<div style="background-color: #FFFF99; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @highlight-color: #FFFF99;
+</div>
+<div style="background-color: #1683E0; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @action-color: #1683E0;
+</div>
+<div style="background-color: #2f96b4; margin: 5px;  padding: 5px; display: inline-block; color: #fff">
+    @info-color: #2f96b4;
+</div>
+
+## Gradient Fills
+<div class="two-tone-gradient">Look a gradient!</div>
+
+## Layout Brushes
+<p>Brushes are groups of CSS declarations all under one class. This makes applying multiple classes more efficient.</p>
+<div class="left-navigation-brush" style="height:50px; margin-bottom: 10px;">Left navigation brush</div>
+
+<div class="workspace-content-container-brush" style="height:50px; margin-bottom: 10px;">Workspace brush</div>
+
+<div class="form-background-brush" style="height:50px; margin-bottom: 10px;">Background brush</div>
+
+*/
